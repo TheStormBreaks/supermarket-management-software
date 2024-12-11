@@ -1,0 +1,4 @@
+/project-folder
+    /inventory.py
+    /receipt.py
+    /main.py
