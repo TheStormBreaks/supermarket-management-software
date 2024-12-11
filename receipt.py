@@ -12,7 +12,7 @@ class Receipt:
         self.size = 0  # To track the number of items in the receipt
 
     def add_item(self, name, price):
-        """Add an item to the receipt."""
+        #Add item to the receipt
         new_node = ReceiptNode(name, price)
         if self.tail is None:
             self.head = self.tail = new_node
@@ -23,7 +23,7 @@ class Receipt:
         self.size += 1  # Increment the size of the receipt
 
     def calculate_total(self):
-        """Calculate the total price of items in the receipt."""
+        #calculate the receipt total
         current = self.head
         total = 0
         while current:
@@ -32,7 +32,7 @@ class Receipt:
         return total
 
     def display_receipt(self):
-        """Display the receipt."""
+        #print receipt
         if self.size == 0:
             print("No items in the receipt.")
             return
@@ -41,4 +41,15 @@ class Receipt:
         while current:
             print(f"Item: {current.name}, Price: {current.price}")
             current = current.next
-        print(f"Total Cost: {self.calculate_total()}")
+        print(f"Total Cost: {self.calculate_total()}") 
+        
+        
+        """
+
+
+class DoublyLinkedList:
+    class Node:
+        def __init__ (self, name, price, ):
+            self.name = name
+            self.price = price"""
+
